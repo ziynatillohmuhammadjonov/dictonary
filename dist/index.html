@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>dictonary</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container header-container">
+        <!-- logo -->
+        <img
+          src="./images/logo.svg"
+          alt=""
+          class="logo-img"
+          width="32"
+          height="36"
+        />
+        <div class="header-wrapper">
+          <div class="font-select">
+            <div class="dropdown">
+              <h3 class="dropdown__text">Sans Serif</h3>
+              <img
+                class="dropdown__img"
+                src="./images/icon-arrow-down.svg"
+                alt="dropdown"
+              />
+            </div>
+            <div class="dropdown__type dd_type">
+              <h3 class="font-type f1 font-user">Sans Serif</h3>
+              <h3 class="font-type f2 font-user">Serif</h3>
+              <h3 class="font-type f3 font-user">Mono</h3>
+              <!-- <img
+                src="./images/icon-arrow-down.svg"
+                alt=""
+                class="dropdown__img"
+              /> -->
+            </div>
+          </div>
+
+          <div>
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="label">
+              <div class="ball"></div>
+            </label>
+          </div>
+          <img src="./images/icon-moon.svg" alt="" srcset="" />
+        </div>
+      </div>
+    </header>
+    <form class="container search">
+      <div class="search-container">
+        <input type="text" id="search" value="" />
+        <img
+          src="./images/icon-search.svg"
+          alt=""
+          srcset=""
+          class="search-icon"
+        />
+      </div>
+    </form>
+    <main class="main hidden">
+      <section class="container">
+        <div class="result">
+          <div id="result">
+            <!-- <h1 class="result-heading">keyboard</h1>
+            <p class="result-tarnskript">/ˈkiːbɔːd/</p> -->
+          </div>
+          <img
+            class="result-button"
+            src="./images/icon-play.svg"
+            alt=""
+            srcset=""
+          />
+          <audio src="" id="audio"></audio>
+        </div>
+        <audio id="audio" src=""></audio>
+      </section>
+      <section class="container meaning-first" id="meaning-first">
+        <div class="meaning-heading">
+          <h3 class="meaning-title" id="meaning-first-title">noun</h3>
+          <img src="./images/Rectangle.svg" alt="" srcset="" />
+        </div>
+        <h3 class="title">Meaning</h3>
+        <ul class="meaning-list" id="meaning-list">
+          <!-- <li class="meaning-item">
+            (etc.) A set of keys used to operate a typewriter, computer etc.
+          </li>
+          <li class="meaning-item">
+            A component of many instruments including the piano, organ, and
+            harpsichord consisting of usually black and white keys that cause
+            different tones to be produced when struck.
+          </li>
+          <li class="meaning-item">
+            A device with keys of a musical keyboard, used to control electronic
+            sound-producing devices which may be built into or separate from the
+            keyboard device.
+          </li> -->
+        </ul>
+        <h3 class="synonymus">Synonyms <a class="synonymus-text"></a></h3>
+      </section>
+      <!--
+      <section class="container meaning-first">
+        <div class="meaning-heading">
+          <h3 class="meaning-title" id="meaning-first-title">verb</h3>
+          <img src="./images/Rectangle.svg" alt="" srcset="" />
+        </div>
+        <h3 class="title">Meaning</h3>
+        <ul class="meaning-list">
+          <li class="meaning-item">
+            To type on a computer keyboard.
+            <p class="exmple">
+              “Keyboarding is the part of this job I hate the most.”
+            </p>
+          </li>
+        </ul>
+        <hr class="line" />
+
+        <div class="source">
+          <a href="" class="source-link"
+            >Source:
+            <span class="source-text"
+              >https://en.wiktionary.org/wiki/keyboard</span
+            >
+            <img src="./images/icon-new-window.svg" alt="" srcset=""
+          /></a>
+        </div>
+      </section> -->
+    </main>
+    <div class="hidden not-found container" id="notFound">
+      <img
+        src="./images/stiker.svg"
+        alt=""
+        class="no-found-img"
+        width="64"
+        height="64"
+      />
+      <h2 class="no-found">No Definitions Found</h2>
+      <p class="no-found-descr">
+        Sorry pal, we couldn't find definitions for the word you were looking
+        for. You can try the search again at later time or head to the web
+        instead.
+      </p>
+    </div>
+  </body>
+</html>
